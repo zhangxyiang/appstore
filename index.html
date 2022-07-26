@@ -18,7 +18,8 @@
                   strHtml+="<a href=\"/appstore/apps/"+info["project"]+"/"+"\">前往下载</a>"+"<br>";
                   strHtml += "<hr>"
                 })
-            $jsontip.html(strHtml);//显示处理后的数据  
+            $applist.append(strHtml);
+            $applist.trigger("create");
             })
         })
 
