@@ -31,7 +31,7 @@
           var apps=info["apps"];
           $.each(apps,function(appIndex,app){
               strHtml+="<p>更新时间"+app["time"]+"</p>"
-              strHtml+="<a href=\""+app["url"]+"\" data-role=\"button\">"+app["title"]+"</a><br>";
+              strHtml+="<a href=\""+app["url"]+"\" data-role=\"button\" data-ajax=\"false\">"+app["title"]+"</a><br>";
           })
         }
       })
