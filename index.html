@@ -13,9 +13,7 @@
   <div data-role="header">
     <h1>Apps</h1>
   </div>
-  <div data-role="content" style="max-width: 500px; margin: 0 auto;">
-    <div id="jsonTip">
-    </div>
+  <div data-role="content" style="max-width: 500px; margin: 0 auto;" id="jsonTip">
   </div>
   <script>
         $.getJSON("app.json",function(data){
@@ -24,7 +22,7 @@
             $jsontip.empty();//清空内容
             $.each(data,function(infoIndex,info){
                   strHtml += "名称："+info["title"]+"<br>";
-                  strHtml+="<a href=\"/appstore/apps/"+info["project"]+"/"+"\">前往下载</a>"+"<br>";
+                  strHtml+="<a href=\"/appstore/apps/"+info["project"]+"/"+"\" data-role=\"button\" data-ajax=\"false\">前往下载</a>"+"<br>";
                   strHtml += "<hr>"
                 })
             $jsontip.append(strHtml);
