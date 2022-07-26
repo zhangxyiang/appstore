@@ -15,7 +15,7 @@
             $jsontip.empty();//清空内容
             $.each(data,function(infoIndex,info){
                   strHtml += "名称："+info["title"]+"<br>";
-                  strHtml+="<a href=\"/apps/"+info["project"]+"/"+"\">前往下载</a>"+"<br>";
+                  strHtml+="<a href=\"/appstore/apps/"+info["project"]+"/"+"\">前往下载</a>"+"<br>";
                   strHtml += "<hr>"
                 })
             $jsontip.html(strHtml);//显示处理后的数据  
