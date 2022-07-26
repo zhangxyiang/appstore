@@ -11,10 +11,11 @@
     $("#btn").click(function(){
         $.getJSON("app.json",function(data){
             var $jsontip = $("#jsonTip");
-            var strHtml = "123";//存储数据的变量
+            var strHtml = "";//存储数据的变量
             $jsontip.empty();//清空内容
             $.each(data,function(infoIndex,info){
                   strHtml += "名称："+info["title"]+"<br>";
+                  strHtml+="<a href=\""+info["url"]+"\">前往下载</a>"+"<br>";
                   strHtml += "IOS："+info["ios"]+"<br>";
                   strHtml += "时间："+info["time"]+"<br>";
                   strHtml += "<hr>"
