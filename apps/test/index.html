@@ -38,10 +38,26 @@
 
 
     <p>扫码用手机访问</p>
+    
+    <div data-role="content" style="max-width: 500px; margin: 0 auto;" id="AppList"></div>
     <div style="text-align: center;" id="qrcode"></div>
-
-
   </div>
+  <script>
+    $.getJSON("../../app.json",function(data){
+      var $applist=$("#AppList");
+      var strHtml="";
+      $applist.empty();
+      $.each(data,function(infoIndex,info){
+        if(info["project"]=="test"){
+          var apps=info["apps"];
+          $.each(apps,function(appIndex,app){
+              strHtml+="<p>更新时间"+app["time"]+"</p>"
+              strHtml+="<a href=\""+app["url"]+"\" data-role=\"button\">"+app["title"]+"</a><br>";
+          })
+        }
+      })
+    })
+  </script>
   <script>
     jQuery('#qrcode').qrcode({width:280,height:280,correctLevel:0,text:window.location.href});
   </script>
