@@ -23,9 +23,9 @@
   </div>
   <script>
     $.getJSON("../../app.json",function(data){
-      
+      var $applist=$("#AppList");
       var strHtml="";
-      jQuery('#AppList').empty();
+      $applist.empty();
       $.each(data,function(infoIndex,info){
         if(info["project"]=="test"){
           var apps=info["apps"];
@@ -35,8 +35,8 @@
           })
         }
       })
-      jQuery('#AppList').text("");
-      jQuery('#AppList').append(strHtml);
+      $applist.append(strHtml);
+      $applist.trigger("create");
       
     })
   </script>
