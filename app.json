@@ -1,0 +1,20 @@
+[
+    {
+        "title": "消消物语",
+        "ios": false,
+        "url": "https://zhangxyiang-app-store.oss-cn-nanjing.aliyuncs.com/AppStore/Apps/xsldfdl.apk",
+        "time": "2020.07.26 14:47"
+    },
+    {
+        "title": "测试",
+        "ios": false,
+        "url": "https://zhangxyiang-app-store.oss-cn-nanjing.aliyuncs.com/AppStore/Apps/xsldfdl.apk",
+        "time": "2020.07.25 14:47"
+    },
+    {
+        "title": "测试2",
+        "ios": true,
+        "url": "https://zhangxyiang-app-store.oss-cn-nanjing.aliyuncs.com/AppStore/plist/happymatchTest.plist",
+        "time": "2020.07.24 14:47"
+    }
+]
