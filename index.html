@@ -21,8 +21,7 @@
             var strHtml = "";//存储数据的变量
             $jsontip.empty();//清空内容
             $.each(data,function(infoIndex,info){
-                  strHtml += "名称："+info["title"]+"<br>";
-                  strHtml+="<a href=\"/appstore/apps/"+info["project"]+"/"+"\" data-role=\"button\" data-ajax=\"false\">前往下载</a>"+"<br>";
+                  strHtml+="<a href=\"/appstore/apps/"+info["project"]+"/"+"\" data-role=\"button\" data-ajax=\"false\">"+info["title"]+"</a>"+"<br>";
                   strHtml += "<hr>"
                 })
             $jsontip.append(strHtml);
