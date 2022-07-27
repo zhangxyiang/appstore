@@ -4,7 +4,7 @@
             {
                 "ios": false,
                 "time": "2022-07-27 12:57:53",
-                "title": "xsldfdl",
+                "title": "xsldfdl_release.apk",
                 "url": "https://zhangxyiang-app-store.oss-cn-nanjing.aliyuncs.com/AppStore/Apps/xsldfdl_release.apk"
             }
         ],
@@ -16,7 +16,7 @@
             {
                 "ios": false,
                 "time": "2022-07-27 10:13:22",
-                "title": "happymatch",
+                "title": "happymatch_test.plist",
                 "url": "itms-services:///?action=download-manifest&url=https://zhangxyiang-app-store.oss-cn-nanjing.aliyuncs.com/AppStore/plist/happymatch_test.plist"
             }
         ],
