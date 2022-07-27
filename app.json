@@ -1,15 +1,26 @@
 [
     {
-        "title": "测试",
-        "project": "test",
-        "apps":
-        [
+        "apps": [
             {
                 "ios": false,
-                "title":"测试包",
-                "url": "https://zhangxyiang-app-store.oss-cn-nanjing.aliyuncs.com/AppStore/Apps/xsldfdl.apk",
-                "time": "2020.07.25 14:47"
+                "time": "2022-07-27 12:57:53",
+                "title": "xsldfdl",
+                "url": "https://zhangxyiang-app-store.oss-cn-nanjing.aliyuncs.com/AppStore/Apps/xsldfdl_release.apk"
             }
-        ]
+        ],
+        "project": "xsldfdl",
+        "title": "xsldfdl"
+    },
+    {
+        "apps": [
+            {
+                "ios": false,
+                "time": "2022-07-27 10:13:22",
+                "title": "happymatch",
+                "url": "https://zhangxyiang-app-store.oss-cn-nanjing.aliyuncs.com/AppStore/plist/happymatch_test.plist"
+            }
+        ],
+        "project": "happymatch",
+        "title": "happymatch"
     }
 ]
